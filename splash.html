@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Go-Cycle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: #0f3d2e;
+      background: linear-gradient(to bottom, #0f3d2e, #14533f);
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      font-family: 'Segoe UI', sans-serif;
+      justify-content: center;
+      height: 100vh;
       color: #ffffff;
       text-align: center;
+      overflow: hidden;
     }
 
     img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
     h1 {
-      font-size: 2.2em;
+      font-size: 2.5em;
       margin: 0;
+      animation: fadeIn 1.4s ease-in-out;
     }
 
     h2 {
       font-size: 1.2em;
-      margin: 5px 0;
-      font-weight: normal;
+      margin: 8px 0;
+      font-weight: 500;
       color: #c3f3d2;
+      animation: fadeIn 1.6s ease-in-out;
     }
 
     .subtitle {
-      margin-top: 10px;
       font-size: 0.95em;
-      color: #9edbb8;
+      color: #b5e6cc;
+      margin-top: 10px;
+      animation: fadeIn 1.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
-  <script>
-    setTimeout(function () {
-      window.location.href = "login_Google"; // Ganti dengan screen tujuan
-    }, 3000); // 3 detik
-  </script>
 </head>
 <body>
-  <img src="https://cdn-icons-png.flaticon.com/128/7890/7890227.png" alt="Icon Bentor" />
+  <img src="https://cdn-icons-png.flaticon.com/128/7890/7890227.png" alt="Icon Bentor">
   <h1>Go-Cycle</h1>
   <h2>Gorontalo Motorcycle</h2>
   <div class="subtitle">Bangga deng produk sandiri</div>
